@@ -15,6 +15,8 @@ CFG Web Dev Challenge project - mini travel site.
 
 ## Demo
 
+[Live version available on Github Pages](https://n1ght0wl.github.io/cfg-web-dev/)
+
 
 ## Features
 
