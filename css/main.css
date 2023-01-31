@@ -1,0 +1,51 @@
+* * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+  background-color: rgb(131, 140, 117);
+}
+
+nav {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  z-index: 2;
+  background-color: black;
+}
+nav a {
+  color: white;
+  margin-right: 40px;
+}
+nav a:hover {
+  color: #838c75;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 44px;
+}
+
+header .hero-img {
+  height: 100vh;
+  background-image: url("../img/globe-black-small.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#navbar {
+  padding-top: 40px;
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/globe-large-black.jpg");
+    background-position: 80% 15%;
+  }
+}/*# sourceMappingURL=main.css.map */
