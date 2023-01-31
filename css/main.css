@@ -8,7 +8,7 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: light;
-  background-color: rgb(131, 140, 117);
+  background-color:black;
 }
 
 nav {
@@ -33,10 +33,46 @@ nav a:hover {
 
 header .hero-img {
   height: 100vh;
-  background-image: url("../img/globe-black-small.jpg");
+  background-image: url("./img/globe-black-small.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.btn {
+  background-color: transparent;
+  margin-top: 250px;
+  margin-left: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  transition: color 0.5s;
+}
+
+.btn:hover {
+  color: #6a4d37;
+}
+
+.text {
+  color: black;
+  height: 50px;
+  width: 500px;
+  -webkit-animation: color 5s;
+          animation: color 5s;
+  text-transform: none;
+  font-size: 25px;
+}
+
+.text-second {
+  color: black;
+  height: 40px;
+  width: 480px;
+  -webkit-animation: color 8s 0.3s;
+          animation: color 8s 0.3s;
+  text-transform: none;
+  font-size: 20px;
 }
 
 #navbar {
@@ -45,7 +81,23 @@ header .hero-img {
 
 @media (min-width: 1200px) {
   header .hero-img {
-    background-image: url("../img/globe-large-black.jpg");
+    background-image: url("./img/globe-large-black.jpg");
     background-position: 80% 15%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@-webkit-keyframes color {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #838c75;
+  }
+}
+@keyframes color {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #838c75;
+  }
+}/
