@@ -35,6 +35,12 @@ nav a.active {
   font-size: 44px;
 }
 
+.btn a {
+  text-decoration:none;
+  color: #838c75;
+  
+}
+
 header .hero-img {
   height: 100vh;
   background-image: url("../img/globe-black-small.jpg");
