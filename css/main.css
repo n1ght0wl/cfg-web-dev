@@ -1,4 +1,6 @@
-* * {
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0;
@@ -9,14 +11,15 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: light;
   background-color:black;
+  height: 100vh;
 }
 
 nav {
-  font-size: 40px;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: lighter;
   z-index: 2;
-  background-color: black;
+  background: black;
 }
 nav a {
   color: white;
@@ -46,19 +49,29 @@ header .hero-img {
   background-image: url("../img/globe-black-small.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
 .btn {
-  background-color: transparent;
-  margin-top: 250px;
-  margin-left: 200px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  font-size: 42px;
-  text-transform: uppercase;
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
   color: white;
   transition: color 0.5s;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.btn h1 {
+  font-size: 1.6rem;
+  margin-bottom: .75rem;
+}
+
+.btn h2 {
+  font-size: 1.4rem;
 }
 
 .btn:hover {
@@ -95,12 +108,19 @@ header .hero-img {
     background-position: 80% 15%;
   }
 }
+
+@media (min-width: 1025px) {
+  .btn {
+    display: flex;
+  }
+}
+
 @-webkit-keyframes color {
   0% {
     color: black;
   }
   100% {
-    color: #838c75;
+    color: #fff;
   }
 }
 @keyframes color {
@@ -108,6 +128,6 @@ header .hero-img {
     color: black;
   }
   100% {
-    color: #838c75;
+    color: #fff;
   }
 }
