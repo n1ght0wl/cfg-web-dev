@@ -26,6 +26,10 @@ nav a:hover {
   color: #838c75;
 }
 
+nav a.active {
+  color: #838c75;
+}
+
 .fa-bars {
   color: white;
   font-size: 44px;
