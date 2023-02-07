@@ -1,124 +1,108 @@
-* * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0;
 }
 
 body {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-weight: light;
-  background-color:black;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: light;
+	background-color: black;
+	height: 100vh;
 }
 
 nav {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: lighter;
-  background-color: black;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	background-color: black;
+	z-index: 2;
 }
 nav a {
-  color: white;
-  margin-right: 40px;
+	color: white;
+	margin-right: 40px;
 }
 nav a:hover {
-  color: #838c75;
+	color: #838c75;
 }
 
 nav a.active {
-  color: #838c75;
+	color: #838c75;
 }
 
 .fa-bars {
-  color: white;
-  font-size: 44px;
+	color: white;
+	font-size: 44px;
 }
 
 .btn a {
-  text-decoration:none;
-  color: #838c75
-  
+	text-decoration: none;
+	color: #838c75;
 }
 
 header .hero-img {
-  height: 100vh;
-  background-image: url("../img/globe-black-small.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
+	height: 100vh;
+	background-image: url('../img/globe-black-small.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 .btn {
-  background-color: transparent;
-  margin-top: 250px;
-  margin-left: 200px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  font-size: 42px;
-  text-transform: uppercase;
-  color: white;
-  transition: color 0.5s;
+	position: absolute;
+	top: 9rem;
+	left: 1rem;
+	color: white;
+	transition: color 0.5s;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+}
+
+.btn h1 {
+	font-size: 1.6rem;
+	margin-bottom: 0.75rem;
+}
+
+.btn h2 {
+	font-size: 1.4rem;
 }
 
 .btn:hover {
-  color: #6a4d37;
+	color: #6a4d37;
 }
 
 .text {
-  color: black;
-  height: 50px;
-  width: 500px;
-  -webkit-animation: color 5s;
-          animation: color 5s;
-  text-transform: none;
-  font-size: 25px;
+	color: black;
+	height: 50px;
+	width: 500px;
+	-webkit-animation: color 5s;
+	animation: color 5s;
+	text-transform: none;
+	font-size: 25px;
 }
 
 .text-second {
-  color: black;
-  height: 40px;
-  width: 480px;
-  -webkit-animation: color 8s 0.3s;
-          animation: color 8s 0.3s;
-  text-transform: none;
-  font-size: 20px;
+	color: black;
+	height: 40px;
+	width: 480px;
+	-webkit-animation: color 8s 0.3s;
+	animation: color 8s 0.3s;
+	text-transform: none;
+	font-size: 20px;
 }
 
 #navbar {
-  padding-top: 40px;
+	padding-top: 40px;
 }
 
 @media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/globe-large-black.jpg");
-    
-  }
+	header .hero-img {
+		background-image: url('../img/globe-large-black.jpg');
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* @-webkit-keyframes color {
-  0% {
-    color: black;
-  }
-  100% {
-    color: #838c75;
-  }
-}
-@keyframes color {
-  0% {
-    color: black;
-  }
-  100% {
-    color: #838c75;
-  }
-} */
