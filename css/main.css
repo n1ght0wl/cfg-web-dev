@@ -15,7 +15,6 @@ nav {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: lighter;
-  z-index: 2;
   background-color: black;
 }
 nav a {
@@ -37,7 +36,7 @@ nav a.active {
 
 .btn a {
   text-decoration:none;
-  color: #838c75;
+  color: #838c75
   
 }
 
@@ -92,10 +91,22 @@ header .hero-img {
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/globe-large-black.jpg");
-    background-position: 80% 15%;
+    
   }
 }
-@-webkit-keyframes color {
+
+
+
+
+
+
+
+
+
+
+
+
+/* @-webkit-keyframes color {
   0% {
     color: black;
   }
@@ -110,4 +121,4 @@ header .hero-img {
   100% {
     color: #838c75;
   }
-}
+} */
