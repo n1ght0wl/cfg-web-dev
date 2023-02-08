@@ -18,7 +18,11 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,100;1,100&display=swap"
 			rel="stylesheet">
 
+		<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/main.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="js/script.js"></script>
 		<script src="https://kit.fontawesome.com/bd53074625.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -46,12 +50,66 @@
 				</div>
 			</div>
 		</nav>
-
-
+		<main class="postcard-main">
+			<h2 class="postcard-heading">Send a postcard</h2>
+			  <div class="sendEmail">
+				<div id="send_form_status"></div>
+				<form id="form">
+					<div class="slider">
+						<div class="postcard">
+							<input type="checkbox" class="check-photo" id="cb1" name="town" value="https://github.com/shutruknahunte/testcfg/blob/main/wieliczka.jpg?raw=true"/>
+    						<label for="cb1">
+							<img src="img/wieliczka.jpg" id="photo1" alt="Eramz Baracz chamber in Wieliczka Salt Mine">
+							<h3 class="postcard-title">Poland<br><span class="town-name">Wieliczka</span></h3>
+						</div>
+						<div class="postcard">
+							<input type="checkbox" class="check-photo" id="cb2" name="town" value="https://github.com/shutruknahunte/testcfg/blob/main/krakow.jpg?raw=true" />
+    						<label for="cb2">
+							<img src="img/krakow.jpg" id="photo2" alt="Krakow city center">
+							<h3 class="postcard-title">Poland<br><span class="town-name">Krakow</span></h3>
+						</div>
+						<div class="postcard">
+							<input type="checkbox" class="check-photo" id="cb3" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Aix-Photo-by-Linhking-740x494.jpg"/>
+    						<label for="cb3">
+							<img src="https://www.pandotrip.com/wp-content/uploads/2016/05/Aix-Photo-by-Linhking-740x494.jpg" id="photo3" alt="Postcard from..."></label>
+							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+						</div>
+						<div class="postcard">
+							<input type="checkbox" class="check-photo" id="cb4" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Poznan-Photo-from-finding-the-universe-740x493.jpg"/>
+    						<label for="cb4">
+							<img src="img/photo4.jpg" id="photo4" alt="Postcard from..."></label>
+							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+						</div>
+						<div class="postcard">
+							<input type="checkbox"  class="check-photo" id="cb5" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Brugges-Photo-by-Typta-740x478.jpg"/>
+    						<label for="cb5">
+							<img src="img/photo5.jpg" id="photo5" alt="Postcard from..."></label>
+							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+						</div>
+					  </div>
+					<div class="form-element">
+						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required />
+					</div>
+					<div>
+						<textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
+					</div>
+					<div class="btnDiv form-element">
+						<button id="sendButton" type="submit">Send it!</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		
+		<script type="text/javascript" src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 			crossorigin="anonymous"
 		></script>
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        emailjs.init('gd6weym3LqwukFAsB')
+        </script>
 	</body>
 </html>

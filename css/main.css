@@ -7,7 +7,7 @@
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   font-family: "Montserrat", sans-serif;
   font-weight: light;
   background-color:black;
@@ -102,6 +102,153 @@ header .hero-img {
   padding-top: 40px;
 }
 
+.postcard {
+  /* max-width: 80%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.postcard img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* .postcard-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.slick-dots li button {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: white;
+  width: 10px;
+  height: 10px;
+  margin: 4px auto;
+}
+
+.slick-dots li button:before {
+  color: transparent;
+}
+
+.sendEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.postcard-heading {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.postcard-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.town-name {
+  font-size: 2rem;
+}
+
+form {
+  margin-top: .5rem;
+  width: 90%;
+}
+
+input, 
+textarea {
+  padding: .75rem;
+  width: 90%;
+  margin: .5rem;
+  border: 2px solid #965246;
+  border-radius: 10px;
+}
+
+input,
+textarea:active {
+  border: 3px solid #965246;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: transparent;
+  color: white;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 2rem;
+  width: 2rem;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label:before {
+  content: "✓";
+  transform: scale(3);
+}
+
+
+#sendButton {
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background-color: #965246;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+#sendButton:hover {
+  background-color: #fff;
+  color: #965246;
+}
+
+#send_form_status{
+  padding: 0 10px; 
+  margin: 10px 0;
+  color: #5a7b41;
+}
+
+.error {
+  color: #965246;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/globe-large-black.jpg");
@@ -109,9 +256,95 @@ header .hero-img {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .postcard img {
+    width: 87%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  label::before {
+    top: 3rem;
+    left: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .postcard img {
+    width: 82%;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  label::before {
+    top: 3rem;
+    left: 5rem;
+  }
+
+  .slick-dots {
+    margin-top: 2rem;
+  }
+
+  .postcard img {
+    margin-bottom: 3rem;
+  }
+
+  input[type="email"] {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+
+  .postcard-title {
+    margin-top: 0;
+    margin-bottom: 1rem;;
+  }
+
+  .postcard img {
+    margin-bottom: 1rem;
+  }
+
+  .slick-dots {
+    margin-bottom: 1rem;
+  }
+
+  #sendButton {
+    margin-bottom: 0;
+    margin-top: .5rem;
+  }
+
+  label::before {
+    top: 3rem;
+    left: 5rem;
+  }
+
+  input[type="email"] {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1025px) {
   .btn {
     display: flex;
+  }
+
+  .postcard img {
+    position: absolute;
+    /* width: 50%; */
+  }
+
+  .form-element, .slick-dots {
+    /* position: absolute;  */
+    /* width: 40%;
+    left: 50%;
+    top: 8rem; */
   }
 }
 
