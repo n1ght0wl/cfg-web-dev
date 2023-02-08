@@ -101,11 +101,13 @@ header .hero-img {
 	padding-top: 40px;
 }
 
-.postcard {
-  /* max-width: 80%; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+.postcard .slick-slide .slick-current .slick-active,
+.slider .slick-initialized .slick-slider .slick-dotted,
+.slick-track,
+.slick-list .draggable,
+.postcard .slick-slide,
+form {
+  border: none;
 }
 
 .postcard img {
@@ -114,13 +116,6 @@ header .hero-img {
   margin: 0 auto;
   border-radius: 10px;
 }
-
-/* .postcard-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
 
 .slick-dots li button {
   border: 1px solid white;
@@ -154,6 +149,11 @@ header .hero-img {
   color: #fff;
   text-align: center;
   margin-top: 1rem;
+}
+
+.postcard-main p {
+  color: #fff;
+  text-align: center;
 }
 
 .town-name {
@@ -191,6 +191,7 @@ label {
   display: block;
   position: relative;
   cursor: pointer;
+  border: none;
 }
 
 label:before {
@@ -207,7 +208,8 @@ label:before {
   line-height: 28px;
   transition-duration: 0.4s;
   transform: scale(0);
-}
+  border: none;
+} 
 
 label img {
   height: 2rem;
@@ -267,6 +269,47 @@ label img {
 .error {
   color: #965246;
 }
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .postcard img {
+    width: 65%;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  label:before {
+    left: 9rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (orientation: landscape) {
+  label:before {
+    left: 12rem;
+    top: 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+  label:before {
+    left: 6rem;
+    top: 5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 600px) {
+  label:before {
+    left: 16rem;
+    top: 4rem;
+    font-size: 2rem;
+  }
+}
+
 
 @media (min-width: 1200px) {
 	header .hero-img {

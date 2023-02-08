@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log("Hello");
     $('.slider').slick({
         accessibility: true,
         arrows: false,
@@ -29,8 +28,6 @@ window.onload = function () {
       const currentSrc = currentPhoto.value;
       console.log(currentSrc);
     
-      
-  
       emailjs.sendForm(serviceID, templateID, this).then(
         () => {
           msg.innerHTML = "<p>Thank you! Your request has been sent.</p>";

@@ -42,16 +42,17 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link" href="index.html">Home</a>
-						<a class="nav-link" href="destinations.html">Destinations</a>
-						<a class="nav-link" href="favourites.html">Favourites</a>
-						<a class="nav-link active" href="postcards.html">Postcards</a>
+						<a class="nav-link active" href="index.html">Home</a>
+						<a class="nav-link" href="quiz.html">Quiz</a>
+						<a class="nav-link" href="postcards.html">Postcards</a>
+						<a class="nav-link" href="contact.html">Contact</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<main class="postcard-main">
 			<h2 class="postcard-heading">Send a postcard</h2>
+			<p>Tap the photo to choose</p>
 			  <div class="sendEmail">
 				<div id="send_form_status"></div>
 				<form id="form">
@@ -71,26 +72,26 @@
 						<div class="postcard">
 							<input type="checkbox" class="check-photo" id="cb3" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Aix-Photo-by-Linhking-740x494.jpg"/>
     						<label for="cb3">
-							<img src="https://www.pandotrip.com/wp-content/uploads/2016/05/Aix-Photo-by-Linhking-740x494.jpg" id="photo3" alt="Postcard from..."></label>
-							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+							<img src="img/london.jpg" id="photo3" alt="London Camden Town"></label>
+							<h3 class="postcard-title">UK<br><span class="town-name">London</span></h3>
 						</div>
 						<div class="postcard">
 							<input type="checkbox" class="check-photo" id="cb4" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Poznan-Photo-from-finding-the-universe-740x493.jpg"/>
     						<label for="cb4">
-							<img src="img/photo4.jpg" id="photo4" alt="Postcard from..."></label>
-							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+							<img src="img/amman.jpg" id="photo4" alt="Amman, Jordan"></label>
+							<h3 class="postcard-title">Jordan<br><span class="town-name">Amman</span></h3>
 						</div>
 						<div class="postcard">
 							<input type="checkbox"  class="check-photo" id="cb5" name="town" value="https://www.pandotrip.com/wp-content/uploads/2016/05/Brugges-Photo-by-Typta-740x478.jpg"/>
     						<label for="cb5">
-							<img src="img/photo5.jpg" id="photo5" alt="Postcard from..."></label>
-							<h3 class="postcard-title">Country<br><span class="town-name">Town</span></h3>
+							<img src="img/lucerne.jpg" id="photo5" alt="Lucerne, Switzerland"></label>
+							<h3 class="postcard-title">Switzerland<br><span class="town-name">Lucerne</span></h3>
 						</div>
 					  </div>
-					<div class="form-element">
+					<div class="form-input">
 						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required />
 					</div>
-					<div>
+					<div class="form-textarea">
 						<textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
 					</div>
 					<div class="btnDiv form-element">
@@ -98,8 +99,7 @@
 					</div>
 				</form>
 			</div>
-		</main>
-		
+		</main>	
 		<script type="text/javascript" src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
