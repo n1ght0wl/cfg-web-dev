@@ -19,7 +19,7 @@ nav {
 	text-transform: uppercase;
 	font-weight: lighter;
 	background-color: black;
-	z-index: 2;
+	z-index: 3;
 }
 nav a {
 	color: white;
@@ -222,7 +222,11 @@ label img {
 }
 
 
-#sendButton {
+#sendButton,
+#button-quiz,
+.button-next,
+.restart,
+.quit {
   padding: 15px;
   font-size: 20px;
   margin-bottom: 16px;
@@ -233,7 +237,23 @@ label img {
   font-weight: bold;
 }
 
-#sendButton:hover {
+.restart,
+.quit {
+  background-color: #3e4b34;
+}
+
+.restart:hover,
+.quit:hover {
+  background-color: #fff;
+  color: #3e4b34;
+}
+
+#button-quiz {
+  margin-top: 1rem;
+}
+
+#sendButton:hover,
+#button-quiz:hover {
   background-color: #fff;
   color: #965246;
 }
