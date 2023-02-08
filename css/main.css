@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0;
 }
 
 body {
@@ -15,91 +15,90 @@ body {
 }
 
 nav {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: lighter;
-  z-index: 2;
-  background: black;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	background-color: black;
+	z-index: 2;
 }
 nav a {
-  color: white;
-  margin-right: 40px;
+	color: white;
+	margin-right: 40px;
 }
 nav a:hover {
-  color: #838c75;
+	color: #838c75;
 }
 
 nav a.active {
-  color: #838c75;
+	color: #838c75;
 }
 
 .fa-bars {
-  color: white;
-  font-size: 44px;
+	color: white;
+	font-size: 44px;
 }
 
 .btn a {
-  text-decoration:none;
-  color: #838c75;
-  
+	text-decoration: none;
+	color: #838c75;
 }
 
 header .hero-img {
-  height: 100vh;
-  background-image: url("../img/globe-black-small.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+	height: 100vh;
+	background-image: url('../img/globe-black-small.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 .btn {
-  position: absolute;
-  top: 9rem;
-  left: 1rem;
-  color: white;
-  transition: color 0.5s;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
+	position: absolute;
+	top: 9rem;
+	left: 1rem;
+	color: white;
+	transition: color 0.5s;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
 }
 
 .btn h1 {
-  font-size: 1.6rem;
-  margin-bottom: .75rem;
+	font-size: 1.6rem;
+	margin-bottom: 0.75rem;
 }
 
 .btn h2 {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 .btn:hover {
-  color: #6a4d37;
+	color: #6a4d37;
 }
 
 .text {
-  color: black;
-  height: 50px;
-  width: 500px;
-  -webkit-animation: color 5s;
-          animation: color 5s;
-  text-transform: none;
-  font-size: 25px;
+	color: black;
+	height: 50px;
+	width: 500px;
+	-webkit-animation: color 5s;
+	animation: color 5s;
+	text-transform: none;
+	font-size: 25px;
 }
 
 .text-second {
-  color: black;
-  height: 40px;
-  width: 480px;
-  -webkit-animation: color 8s 0.3s;
-          animation: color 8s 0.3s;
-  text-transform: none;
-  font-size: 20px;
+	color: black;
+	height: 40px;
+	width: 480px;
+	-webkit-animation: color 8s 0.3s;
+	animation: color 8s 0.3s;
+	text-transform: none;
+	font-size: 20px;
 }
 
 #navbar {
-  padding-top: 40px;
+	padding-top: 40px;
 }
 
 .postcard {
@@ -250,117 +249,7 @@ label img {
 }
 
 @media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/globe-large-black.jpg");
-    background-position: 80% 15%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .postcard img {
-    width: 87%;
-  }
-
-  form {
-    width: 80%;
-  }
-
-  label::before {
-    top: 3rem;
-    left: 4rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .postcard img {
-    width: 82%;
-  }
-
-  form {
-    width: 70%;
-  }
-
-  label::before {
-    top: 3rem;
-    left: 5rem;
-  }
-
-  .slick-dots {
-    margin-top: 2rem;
-  }
-
-  .postcard img {
-    margin-bottom: 3rem;
-  }
-
-  input[type="email"] {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding: 1.7rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-height: 1024px) {
-
-  .postcard-title {
-    margin-top: 0;
-    margin-bottom: 1rem;;
-  }
-
-  .postcard img {
-    margin-bottom: 1rem;
-  }
-
-  .slick-dots {
-    margin-bottom: 1rem;
-  }
-
-  #sendButton {
-    margin-bottom: 0;
-    margin-top: .5rem;
-  }
-
-  label::before {
-    top: 3rem;
-    left: 5rem;
-  }
-
-  input[type="email"] {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 1025px) {
-  .btn {
-    display: flex;
-  }
-
-  .postcard img {
-    position: absolute;
-    /* width: 50%; */
-  }
-
-  .form-element, .slick-dots {
-    /* position: absolute;  */
-    /* width: 40%;
-    left: 50%;
-    top: 8rem; */
-  }
-}
-
-@-webkit-keyframes color {
-  0% {
-    color: black;
-  }
-  100% {
-    color: #fff;
-  }
-}
-@keyframes color {
-  0% {
-    color: black;
-  }
-  100% {
-    color: #fff;
-  }
+	header .hero-img {
+		background-image: url('../img/globe-large-black.jpg');
+	}
 }

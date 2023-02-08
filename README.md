@@ -10,7 +10,7 @@ CFG Web Dev Challenge project - mini travel site.
 - [@Androulla](https://github.com/n1ght0wl)
 - [@Kamila Pruski](https://github.com/pruskikam)
 - [@Sarah Kelly](https://github.com/sloukelly)
-- [@Sharon Roy]()
+- [@Sharon Roy](https://github.com/sharonroy28)
 
 
 ## Demo
