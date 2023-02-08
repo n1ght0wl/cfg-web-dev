@@ -199,6 +199,40 @@ h1 {
   .text-complete p {
     margin-bottom: 0;
   }
+
+  @media only screen and (min-width: 600px) and (orientation: landscape) {
+    .wrapper-result,
+    .wrapper-quiz {
+      width: 60%;
+    }
+
+    .footer-quiz {
+      height: fit-content;
+    }
+
+    .footer-quiz button {
+      font-size: 1.2rem;
+      position: relative;
+      top: -.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (orientation: landscape) {
+    .wrapper-result,
+    .wrapper-quiz {
+      width: 60%;
+    }
+
+    .footer-quiz {
+      height: fit-content;
+    }
+
+    .footer-quiz button {
+      font-size: 1.2rem;
+      position: relative;
+      top: -.5rem;
+    }
+  }
   
   @media screen and (min-width: 768px) and (orientation: portrait) {
     .button-quiz {
