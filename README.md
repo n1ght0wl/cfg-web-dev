@@ -27,7 +27,7 @@ CFG Web Dev Challenge project - mini travel site.
 
 Landing Page             |  ECard                    |  Travel Quiz
 :-------------------------:|:-------------------------: |:-------------------------: |
-![](https://github.com/neternefer/cards-cookies/blob/main/img/landingPage.png?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/ecard.jpg?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/formSubmit.png?raw=true)
+![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotLanding.png?raw=true) | ![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotPostcard.png?raw=true) | ![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotQuiz.png?raw=true)
 
 
 ## Tech Stack
