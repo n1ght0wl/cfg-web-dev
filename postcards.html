@@ -52,9 +52,8 @@
 		</nav>
 		<main class="postcard-main">
 			<h2 class="postcard-heading">Send a postcard</h2>
-			<p>Tap the photo to choose</p>
+			<p class="tap-info">Tap the photo to choose</p>
 			  <div class="sendEmail">
-				<div id="send_form_status"></div>
 				<form id="form" class="form-postcards">
 					<div class="slider">
 						<div class="postcard">
@@ -88,7 +87,7 @@
 							<p class="postcard-title">Switzerland<br><span class="town-name">Lucerne</span></p>
 						</div>
 					  </div>
-					<div class="form-input">
+					<div class="form-content"><div class="form-input">
 						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required>
 					</div>
 					<div class="form-textarea">
@@ -96,7 +95,16 @@
 					</div>
 					<div class="btnDiv form-element">
 						<button id="sendButton" type="submit">Send it!</button>
+					</div></div>
+					<!-- <div class="form-input">
+						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required>
 					</div>
+					<div class="form-textarea">
+						<textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
+					</div>
+					<div class="btnDiv form-element">
+						<button id="sendButton" type="submit">Send it!</button>
+					</div> -->
 				</form>
 			</div>
 		</main>	

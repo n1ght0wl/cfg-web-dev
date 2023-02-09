@@ -237,7 +237,6 @@ label img {
   transform: scale(3);
 }
 
-
 #sendButton,
 .sendBtn,
 #button-quiz,
@@ -372,13 +371,76 @@ label img {
 
 @media only screen and (min-width: 1024px) and (min-height: 600px) {
   label:before {
-    left: 16rem;
-    top: 4rem;
     font-size: 2rem;
+    color: #fff;
+    left: 10rem;
+  }
+
+  .town-name {
+    font-weight: bold;
   }
 
   #contact_form {
     width: 50%;
+  }
+
+  .slider {
+    width: 60%;
+  }
+  
+  .form-postcards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .sendEmail {
+    margin-top: -1rem;
+  }
+
+  h2 {
+    margin: 0;
+  }
+  
+  .form-content {
+    width: 50%;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .postcard-title {
+    position: relative;
+    top: -7rem;
+    font-weight: bold;
+    background: #000;
+    opacity: .7;
+  }
+
+  .postcard-heading {
+    padding-bottom: 0;
+    
+  } 
+
+  .postcard-main p{
+    padding-bottom: 1rem;
+  }
+
+  .send_form_status {
+    text-align: left;
+    margin-left: 8rem;
+  }
+
+  .postcard-main .postcard-title {
+    text-align: left;
+    color: #fff;
+    margin-left: 9rem;
+  }
+
+  .slick-dots {
+    bottom: 5rem;
   }
 }
 
