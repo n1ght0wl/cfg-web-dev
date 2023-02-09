@@ -26,7 +26,7 @@
 		<script src="https://kit.fontawesome.com/bd53074625.js" crossorigin="anonymous"></script>
 	</head>
 
-	<body>
+	<body class="body-postcards">
 		<nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0">
 			<div class="container-fluid">
 				<button
@@ -51,8 +51,6 @@
 			</div>
 		</nav>
 		<main class="postcard-main">
-			<h2 class="postcard-heading">Send a postcard</h2>
-			<p class="tap-info">Tap the photo to choose</p>
 			  <div class="sendEmail">
 				<form id="form" class="form-postcards">
 					<div class="slider">
@@ -87,26 +85,21 @@
 							<p class="postcard-title">Switzerland<br><span class="town-name">Lucerne</span></p>
 						</div>
 					  </div>
-					<div class="form-content"><div class="form-input">
-						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required>
+					<div class="form-content">
+						<h2 class="postcard-heading">Send a postcard</h2>
+						<p class="tap-info">Tap the photo to choose</p>
+						<div class="form-input">
+							<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required>
+					    </div>
+					    <div class="form-textarea">
+						    <textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
+						</div>
+						<div class="btnDiv form-element">
+							<button id="sendButton" type="submit">Send it!</button>
 					</div>
-					<div class="form-textarea">
-						<textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
-					</div>
-					<div class="btnDiv form-element">
-						<button id="sendButton" type="submit">Send it!</button>
-					</div></div>
-					<!-- <div class="form-input">
-						<input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required>
-					</div>
-					<div class="form-textarea">
-						<textarea id="message" class="form-element" placeholder="Add a personal message" name="message" required></textarea>
-					</div>
-					<div class="btnDiv form-element">
-						<button id="sendButton" type="submit">Send it!</button>
-					</div> -->
 				</form>
 			</div>
+			<i class="fa-solid fa-paint-roller magic-btn"></i>
 		</main>	
 		<script src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
 		<script
