@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   /* position: relative; */
   font-family: "Montserrat", sans-serif;
@@ -50,6 +54,11 @@ header .hero-img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+}
+
+.header-contact {
+  color: #fff;
+  text-align: center;
 }
 
 .btn {
@@ -161,8 +170,13 @@ form {
 }
 
 form {
-  margin-top: .5rem;
+  text-align: center;
   width: 90%;
+  margin: 0 auto;
+}
+
+.form-postcards {
+  margin-top: .5rem;  
 }
 
 input, 
@@ -187,7 +201,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-label {
+.form-postcards label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -225,6 +239,7 @@ label img {
 
 
 #sendButton,
+.sendBtn,
 #button-quiz,
 .button-next,
 .restart,
@@ -250,12 +265,17 @@ label img {
   color: #3e4b34;
 }
 
+.sendBtn {
+  margin-top: 1rem;
+}
+
 #button-quiz {
   margin-top: 1rem;
 }
 
 #sendButton:hover,
-#button-quiz:hover {
+#button-quiz:hover,
+.sendBtn:hover {
   background-color: #fff;
   color: #965246;
 }
@@ -264,10 +284,36 @@ label img {
   padding: 0 10px; 
   margin: 10px 0;
   color: #5a7b41;
+  text-align: center;
 }
 
 .error {
   color: #965246;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.socials a {
+  color: #965246;
+}
+
+.socials i {
+  font-size: 1.5rem;
+}
+
+.socials i:hover {
+  color: #fff;
 }
 
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -284,6 +330,14 @@ label img {
   label:before {
     left: 9rem;
   }
+
+  .contact-main {
+    height: auto;
+  }
+
+  #contact_form {
+    width: 75%;
+  }
 }
 
 @media only screen and (min-width: 800px) and (orientation: landscape) {
@@ -291,6 +345,20 @@ label img {
     left: 12rem;
     top: 3rem;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #contact_form {
+    width: 75%;
+  }
+
+  .socials i {
+    font-size: 2.5rem;
+  }
+
+  .socials {
+    margin-top: 2rem;
   }
 }
 
@@ -307,6 +375,16 @@ label img {
     left: 16rem;
     top: 4rem;
     font-size: 2rem;
+  }
+
+  #contact_form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .contact-main {
+    height: 90%;
   }
 }
 

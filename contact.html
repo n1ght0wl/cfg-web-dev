@@ -6,21 +6,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>contact form</title>
+	<title>Contact</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
 			crossorigin="anonymous">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,100;1,100&display=swap"
 			rel="stylesheet">
-	<link rel="stylesheet" href="css/contact.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://kit.fontawesome.com/bd53074625.js" crossorigin="anonymous"></script>
+	<script src="js/contact.js"></script>  
 </head>
-
 <body>
 	<nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0">
 		<div class="container-fluid">
@@ -38,44 +36,24 @@
 			</div>
 		</div>
 	</nav>
-	<header>Contact us</header>
-	<form>
-		<div class="container">
+	<div class="contact-main">
+		<h2 class="header-contact">Contact us</h2>
+		<div id="send_form_status"></div>
+			<form id="contact_form">
+				<div><input type="text" name="name" id="name" class="formField" placeholder="Jane Kowalski" required/></div>
+				<div><input type="email" name="email" id="email" class="formField" placeholder="jane@kowalski.com" required/></div>
+				<div><textarea name="message" id="message" class="formField" placeholder="Give us your thoughts!" required></textarea></div>
+				<div><button class="sendBtn">Send request</button></div>
+			</form> 
+	    <div class="socials">
+			<a target="_blank" href="https://www.facebook.com/lonelyplanet/?locale=en_GB" aria-hidden="true"> <i
+				class="fa-brands fa-facebook"></i></a>
 
-			<div class="yourname">
-				<label for="yourname-label" class="yourname-label"> Your name: </label>
-			</div>
+			<a target="_blank" href="https://www.instagram.com/lonelyplanet/" aria-hidden="true"> <i
+				class="fa-brands fa-instagram"></i></a>
 
-			<div class="yourname-text">
-				<input type="text" id="yourname-label" name="yourname-text" required placeholder="Jane Kowalski">
-			</div>
-
-			<div class="youremail">
-				<label for="youremail" class="youremail-label" id="email">Your email addres: </label>
-			</div>
-			<div class="email">
-				<input type="email" id="youremail" name="email-text" required placeholder="jane@kowalski.com">
-			</div>
-			<div class="your-comment">
-				<textarea class="comment" name="comment" id="comment" placeholder="give us your thoughts!"
-					required></textarea>
-			</div>
+			<a target="_blank" href="https://www.lonelyplanet.com/" aria-hidden="true"> <i class="fa-brands fa-twitter"></i></a>
 		</div>
-		<div class="btn-holder">
-
-			<input type="submit" class="submit">
-		</div>
-	</form>
-	<div class="socials">
-
-		<a target="_blank" href="https://www.facebook.com/lonelyplanet/?locale=en_GB" aria-hidden="true"> <i
-				class="fa-brands fa-facebook"></i> </a>
-
-		<a target="_blank" href="https://www.instagram.com/lonelyplanet/" aria-hidden="true"> <i
-				class="fa-brands fa-instagram"></i> </a>
-
-		<a target="_blank" href="https://www.lonelyplanet.com/" aria-hidden="true"> <i class="fa-brands fa-twitter"></i>
-		</a>
 	</div>
 	<script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
