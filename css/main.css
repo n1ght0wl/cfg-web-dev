@@ -726,6 +726,10 @@ h1 {
   .contact-main {
     height: 90%;
   }
+
+  .btn {
+    display: flex;
+  }
 }
 
 
