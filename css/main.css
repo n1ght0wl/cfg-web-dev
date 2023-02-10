@@ -279,7 +279,7 @@ label img {
   color: #965246;
 }
 
-#send_form_status{
+.postcard-main #send_form_status p {
   padding: 0 10px; 
   margin: 10px 0;
   color: #5a7b41;
@@ -515,22 +515,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.color-index {
-  background-image: url("../img/bg1.jpg");
-}
-
-.color-quiz {
-  background-image: url("../img/bg2.jpg");
-}
-
-.color-postcard {
-  background-image: url("../img/bg3.jpg");
-}
-
-.color-contact {
-  background-image: url("../img/bg4.jpg");
-}
-
 .color-mode {
   background-repeat: no-repeat;
   background-size: cover;
@@ -721,9 +705,10 @@ h1 {
     padding-bottom: 1rem;
   }
 
-  .send_form_status {
+  #send_form_status p {
     text-align: left;
     margin-left: 8rem;
+    color: #5a7b41;
   }
 
   .postcard-main .postcard-title {
