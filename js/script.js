@@ -28,12 +28,11 @@ window.onload = function () {
       console.log(currentSrc);    
       emailjs.sendForm(serviceID, templateID, this).then(
         () => {
+          msg.innerHTML = '<p>Thank you! Your request has been sent.</p>';
           form.reset();
-        }
-      );
+      }, (err) => {
+          msg.classList.add(".error");
+          msg.innerHTML = '<p>Something went wrong.</p>';
+      });
     });
 };
-
-/**THEME SWITCHER */
-const magicSwitch = document.querySelector(".magic-btn");
-const currentBody = document.querySelector("body");
