@@ -9,9 +9,6 @@ CFG Web Dev Challenge project - mini travel site.
 - [@Anna Nodzyńska](https://www.github.com/neternefer)
 - [@Androulla](https://github.com/n1ght0wl)
 - [@Kamila Pruski](https://github.com/pruskikam)
-- [@Sarah Kelly]()
-- [@Sharon Roy]()
-
 
 ## Demo
 
@@ -21,15 +18,23 @@ CFG Web Dev Challenge project - mini travel site.
 ## Features
 
 - Ability to send an ecard with customized text to the provided email address
+- Ability to send data from contact form to the provided email address
+- Interactive travel quiz
+- Mobile friendly photo carousel
+- Fully responsive
 
 ## Screenshots
+
+Landing Page             |  ECard                    |  Travel Quiz
+:-------------------------:|:-------------------------: |:-------------------------: |
+![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotLanding.png?raw=true) | ![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotPostcard.png?raw=true) | ![](https://github.com/n1ght0wl/cfg-web-dev/blob/main/img/screenshotQuiz.png?raw=true)
 
 
 ## Tech Stack
 
-**Main** HTML5, CSS, JavaScript
+**Main** HTML5, CSS, JavaScript, JQuery
 
-**Libraries** EmailJS
+**Libraries** EmailJS, Bootstrap, Slick
 
 **SMTP** SendinBlue
 
