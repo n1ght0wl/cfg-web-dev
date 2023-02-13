@@ -516,17 +516,31 @@ h1 {
 }
 
 .color-mode {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
+  background-image: none;
+  background-color: #6b2c91;
 }
 
-.magic-btn {
-  color: #fff;
-  font-size: 1.5rem;
-  align-self: end;
-  margin-right: 1rem;
-  margin-bottom: .7rem;
+.color-mode nav {
+  background-color: #6b2c91;
+}
+
+.color-mode .hero-img {
+  background-color: #6b2c91;
+  background-image: none;
+}
+
+.color-mode h1,
+.color-mode p,
+.color-mode h2,
+.color-mode h3 {
+  font-family: "MardiGras";
+}
+
+@font-face {
+  font-family: MardiGras;
+  src: url("../fonts/MardiGras.otf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @media only screen and (min-width: 600px) and (orientation: landscape) {

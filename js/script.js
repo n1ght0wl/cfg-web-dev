@@ -15,7 +15,6 @@ $(document).ready(function(){
 
 /**CARD FORM SUBMIT */
 window.onload = function () {
-    
     const form = document.querySelector("form");
     const msg = document.getElementById("send_form_status");   
     form.addEventListener("submit", function (event) {
@@ -36,3 +35,6 @@ window.onload = function () {
       });
     });
 };
+
+
+
