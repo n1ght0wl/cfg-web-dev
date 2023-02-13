@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display&display=swap');
 
+:root {
+	--mardi-violet: #6b2c91;
+	--mardi-gold: #fdd023;
+	--mardi-green: #028b43;
+	--black: #000;
+	--white: #fff;
+	--copper-rust: #965246; /*dark pink*/
+	--battleship-gray: #838c75;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0px;
@@ -532,6 +542,16 @@ h1 {
 .color-mode h2,
 .color-mode h3 {
   font-family: "MardiGras";
+}
+
+.footer {
+	position: fixed;
+	top: 85%;
+	left: 5%;
+}
+
+.footer img {
+	height: 3.2rem;
 }
 
 @font-face {
