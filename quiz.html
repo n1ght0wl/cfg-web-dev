@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/bd53074625.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-quiz">
+    <nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="quiz.html">Quiz</a>
+                    <a class="nav-link" href="postcards.html">Postcards</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="hero-section">
+            <h1>Where should you travel next?</h1>
+            <button class="button-quiz" id="button-quiz">Take a quiz</button>
+        </div>
+        <div class="wrapper-quiz">
+            <div class="content-quiz">
+                <div class="text-quiz"></div>
+                <div class="option-list"></div>
+            </div>
+            <div class="footer-quiz">
+                <div class="question-total"></div>
+                <button class="button-next">Next</button>
+            </div>
+        </div>
+        <div class="wrapper-result">
+            <div class="icon-result"></div>
+            <div class="text-complete"></div>
+            <div class="text-score"></div>
+            <div class="buttons">
+                <button class="restart">Replay</button>
+                <button class="quit">Quit</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
