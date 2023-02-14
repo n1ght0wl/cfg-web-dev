@@ -554,6 +554,18 @@ h1 {
 	height: 3.2rem;
 }
 
+.seasonal.mardi {
+	position: absolute;
+	z-index: 50;
+	top: -3rem;
+	right: 0;
+	overflow: hidden;
+}
+
+#mardi-beads {
+	height: 12rem;
+}
+
 @font-face {
   font-family: MardiGras;
   src: url("../fonts/MardiGras.otf") format('truetype');
