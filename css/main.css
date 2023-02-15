@@ -523,55 +523,11 @@ h1 {
 	margin-bottom: 0;
 }
 
-.color-mode {
-  background-image: none;
-  background-color: #6b2c91;
+.mode-switch {
+	color: #965246;
+	cursor: pointer;
 }
 
-.color-mode nav {
-  background-color: #6b2c91;
-}
-
-.color-mode .hero-img {
-  background-color: #6b2c91;
-  background-image: none;
-}
-
-.color-mode h1,
-.color-mode p,
-.color-mode h2,
-.color-mode h3 {
-  font-family: "MardiGras";
-}
-
-.footer {
-	position: fixed;
-	top: 85%;
-	left: 5%;
-}
-
-.footer img {
-	height: 3.2rem;
-}
-
-.seasonal.mardi {
-	position: absolute;
-	z-index: 50;
-	top: -3rem;
-	right: 0;
-	overflow: hidden;
-}
-
-#mardi-beads {
-	height: 12rem;
-}
-
-@font-face {
-  font-family: MardiGras;
-  src: url("../fonts/MardiGras.otf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
 
 @media only screen and (min-width: 600px) and (orientation: landscape) {
 	.wrapper-result,

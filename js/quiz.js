@@ -6,6 +6,7 @@ const restartQuiz = wrapperResult.querySelector(".buttons .restart");
 const quitQuiz = wrapperResult.querySelector(".buttons .quit");
 const nextButton = document.querySelector(".button-next");
 const questionCounter = document.querySelector(".question-total");
+const modeSwitch = document.querySelector(".mode-switch");
 
 let questionCount = 0;
 let questionNumber = 1;
@@ -16,6 +17,21 @@ let resultLink = "";
 let resultIcon;
 let categories = [];
 let myCategory = 0;
+
+function swapStyleSheet(sheet){
+  document.getElementById('theme').setAttribute('href', sheet);
+  localStorage.setItem("sheet", sheet);
+}
+
+// window.onload = _ =>
+//  swapStyleSheet(
+//   localStorage.getItem("sheet") || "../css/main.css"
+//  );
+
+modeSwitch.onclick = () => {
+  swapStyleSheet('../css/mardi.css');
+};
+
 
 function mostFrequent(arr, n) {
  

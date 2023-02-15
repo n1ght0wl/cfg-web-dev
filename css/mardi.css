@@ -1,0 +1,65 @@
+body {
+    background-color: #6b2c91;
+}
+  
+nav {
+    background-color: #6b2c91;
+}
+  
+.hero-img {
+    background-color: #6b2c91;
+}
+  
+h1,
+p,
+h2,
+h3, 
+button, 
+.nav-link {
+    font-family: "MardiGras";
+}
+  
+.body-contact {
+    background-image: url("../img/mardiMode/joker.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.body-postcards{
+    background-image: url("../img/mardiMode/mardiBg1.png");
+    background-size: cover;
+    background-position: center;
+}
+  
+.footer {
+    position: fixed;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.footer img {
+    height: 15rem;
+}
+  
+.seasonal.mardi {
+    position: absolute;
+    z-index: 50;
+    top: -3rem;
+    right: 0;
+    overflow: hidden;
+}
+  
+#mardi-beads {
+    height: 12rem;
+}
+  
+@font-face {
+    font-family: MardiGras;
+    src: url("../fonts/MardiGras.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
