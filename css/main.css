@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display&display=swap');
 
+:root {
+	--mardi-bg: #6b2c91;
+	--mardi-color: #fdd023;
+	--mardi-secondary: #028b43;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0px;
@@ -48,7 +54,7 @@ nav a.active {
 }
 
 header .hero-img {
-	height: 100vh;
+	height: 85vh;
 	background-image: url('../img/globe-black-small.jpg');
 	background-position: center;
 	background-size: cover;
@@ -513,6 +519,16 @@ h1 {
 	margin-bottom: 0;
 }
 
+.color-mode .fa-bars,
+.color-mode .nav-link,
+h1 {
+	color: var(--mardi-color);
+}
+
+.color-mode .nav-link.active {
+	color: var(--mardi-secondary);
+}
+
 .color-mode {
   background-image: none;
   background-color: #6b2c91;
@@ -524,14 +540,39 @@ h1 {
 
 .color-mode .hero-img {
   background-color: #6b2c91;
-  background-image: none;
+  background-image: url("../img/globe-removebg.png");
 }
 
-.color-mode h1,
 .color-mode p,
 .color-mode h2,
 .color-mode h3 {
   font-family: "MardiGras";
+  color: var(--mardi-color);
+}
+
+#button-quiz,
+#sendButton,
+.sendBtn {
+	background-color: var(--mardi-color);
+	color: var(--mardi-bg);
+	font-family: "MardiGras";
+}
+
+.color-mode .tap-info {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.color-mode .town-name,
+.color-mode .fa-brands,
+.color-mode .green-text {
+	color: var(--mardi-secondary);
+}
+
+ 
+
+.color-mode input,
+.color-mode textarea {
+	border: 3px solid var(--mardi-secondary);
 }
 
 @font-face {
